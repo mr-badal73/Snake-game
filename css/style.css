@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+     padding: 0;     /*bydefault, all elements have no margin or padding */
+}
+body{
+    /* font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5; */
+    min-height: 100vh;     /*Viewport Height.*/
+    display: flex;
+    justify-content: center; /*horizontal + vertical dono direction mein center */
+    align-items: center; /*flex items ko cross-axis ke center mein lana.*/
+}
+.game-container{
+    width: min(95vw, 400px); /*viewport width ka 95% ya 400px mein se chhota wala choose karega */
+    background-color: rgb(251, 247, 247);
+    height: 400px;
+    border: 2px solid black;
+}
+#game-board{
+    width: 100%;
+    aspect-ratio: 1; /*width aur height ka ratio 1:1 hoga, matlab square shape */
+    display: grid;
+    grid-template-columns: repeat(20, 1fr); /*20 columns of equal width*/
+    grid-template-rows: repeat(20, 1fr); /*20 rows of equal height*/
+    /* background-color: rgb(248, 7, 7); */
+    border: 2px solid black;
+}
